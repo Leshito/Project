@@ -1,0 +1,4 @@
+/home/luish/Schoolz/SD/Test/build/CMakeFiles/rebuild_cache.dir
+/home/luish/Schoolz/SD/Test/build/CMakeFiles/edit_cache.dir
+/home/luish/Schoolz/SD/Test/build/CMakeFiles/openni2_snapper.dir
+/home/luish/Schoolz/SD/Test/build/CMakeFiles/rewtMain.dir

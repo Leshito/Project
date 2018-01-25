@@ -1,0 +1,4 @@
+/home/luish/Schoolz/SD/CMakeFiles/rebuild_cache.dir
+/home/luish/Schoolz/SD/CMakeFiles/edit_cache.dir
+/home/luish/Schoolz/SD/CMakeFiles/openni2_snapper.dir
+/home/luish/Schoolz/SD/CMakeFiles/load_pcd.dir
