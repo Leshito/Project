@@ -1,3 +1,0 @@
-/home/luish/Schoolz/SD/vanRan/voxel_ran_combo/build/CMakeFiles/rebuild_cache.dir
-/home/luish/Schoolz/SD/vanRan/voxel_ran_combo/build/CMakeFiles/edit_cache.dir
-/home/luish/Schoolz/SD/vanRan/voxel_ran_combo/build/CMakeFiles/rewtMain.dir

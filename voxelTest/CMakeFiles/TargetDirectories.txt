@@ -1,3 +1,0 @@
-/home/luish/Schoolz/SD/voxelTest/CMakeFiles/rebuild_cache.dir
-/home/luish/Schoolz/SD/voxelTest/CMakeFiles/edit_cache.dir
-/home/luish/Schoolz/SD/voxelTest/CMakeFiles/voxel_grid.dir

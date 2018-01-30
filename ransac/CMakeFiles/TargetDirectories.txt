@@ -1,3 +1,0 @@
-/home/luish/Schoolz/SD/ransac/CMakeFiles/edit_cache.dir
-/home/luish/Schoolz/SD/ransac/CMakeFiles/rebuild_cache.dir
-/home/luish/Schoolz/SD/ransac/CMakeFiles/random_sample_consensus.dir

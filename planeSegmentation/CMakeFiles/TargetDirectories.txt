@@ -1,3 +1,0 @@
-/home/luish/Schoolz/SD/planeSegmentation/CMakeFiles/rebuild_cache.dir
-/home/luish/Schoolz/SD/planeSegmentation/CMakeFiles/edit_cache.dir
-/home/luish/Schoolz/SD/planeSegmentation/CMakeFiles/planar_segmentation.dir
