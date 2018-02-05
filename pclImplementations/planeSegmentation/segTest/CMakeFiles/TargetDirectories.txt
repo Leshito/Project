@@ -1,0 +1,3 @@
+/home/luish/Schoolz/SD/Project/pclImplementations/planeSegmentation/segTest/CMakeFiles/rebuild_cache.dir
+/home/luish/Schoolz/SD/Project/pclImplementations/planeSegmentation/segTest/CMakeFiles/edit_cache.dir
+/home/luish/Schoolz/SD/Project/pclImplementations/planeSegmentation/segTest/CMakeFiles/plane_seg.dir
