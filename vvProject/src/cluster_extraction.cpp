@@ -85,8 +85,8 @@ clusterExtraction(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<
   ec.setClusterTolerance (0.02); // 2cm
   //ec.setMinClusterSize (100);
   //ec.setMaxClusterSize (25000);
-  ec.setMinClusterSize (500);
-  ec.setMaxClusterSize (2000);
+  ec.setMinClusterSize (100);
+  ec.setMaxClusterSize (3000);
   ec.setSearchMethod (tree);
   ec.setInputCloud (cloud);
   ec.extract (cluster_indices);

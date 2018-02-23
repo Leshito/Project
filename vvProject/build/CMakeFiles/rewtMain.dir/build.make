@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luish/Schoolz/SD/Test
+CMAKE_SOURCE_DIR = /home/luish/Schoolz/SD/Project/vvProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luish/Schoolz/SD/Test/build
+CMAKE_BINARY_DIR = /home/luish/Schoolz/SD/Project/vvProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rewtMain.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/rewtMain.dir/flags.make
 
 CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o: CMakeFiles/rewtMain.dir/flags.make
 CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o: ../src/rewtMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o -c /home/luish/Schoolz/SD/Test/src/rewtMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/rewtMain.cpp
 
 CMakeFiles/rewtMain.dir/src/rewtMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/rewtMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Test/src/rewtMain.cpp > CMakeFiles/rewtMain.dir/src/rewtMain.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/rewtMain.cpp > CMakeFiles/rewtMain.dir/src/rewtMain.cpp.i
 
 CMakeFiles/rewtMain.dir/src/rewtMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/rewtMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Test/src/rewtMain.cpp -o CMakeFiles/rewtMain.dir/src/rewtMain.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/rewtMain.cpp -o CMakeFiles/rewtMain.dir/src/rewtMain.cpp.s
 
 CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o.provides.build: CMakeFiles/rewtMain.d
 
 CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o: CMakeFiles/rewtMain.dir/flags.make
 CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o: ../src/CloudVisualizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o -c /home/luish/Schoolz/SD/Test/src/CloudVisualizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/CloudVisualizer.cpp
 
 CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Test/src/CloudVisualizer.cpp > CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/CloudVisualizer.cpp > CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.i
 
 CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Test/src/CloudVisualizer.cpp -o CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/CloudVisualizer.cpp -o CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.s
 
 CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o.provides.build: CMakeFiles/rew
 
 CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o: CMakeFiles/rewtMain.dir/flags.make
 CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o: ../src/random_sample_consensus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o -c /home/luish/Schoolz/SD/Test/src/random_sample_consensus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/random_sample_consensus.cpp
 
 CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Test/src/random_sample_consensus.cpp > CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/random_sample_consensus.cpp > CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.i
 
 CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Test/src/random_sample_consensus.cpp -o CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/random_sample_consensus.cpp -o CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.s
 
 CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o.provides.build: CMakeF
 
 CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o: CMakeFiles/rewtMain.dir/flags.make
 CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o: ../src/voxel_grid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o -c /home/luish/Schoolz/SD/Test/src/voxel_grid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/voxel_grid.cpp
 
 CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Test/src/voxel_grid.cpp > CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/voxel_grid.cpp > CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.i
 
 CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Test/src/voxel_grid.cpp -o CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/voxel_grid.cpp -o CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.s
 
 CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o.provides.build: CMakeFiles/rewtMain
 
 CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o: CMakeFiles/rewtMain.dir/flags.make
 CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o: ../src/load_pcd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o -c /home/luish/Schoolz/SD/Test/src/load_pcd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/load_pcd.cpp
 
 CMakeFiles/rewtMain.dir/src/load_pcd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/load_pcd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Test/src/load_pcd.cpp > CMakeFiles/rewtMain.dir/src/load_pcd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/load_pcd.cpp > CMakeFiles/rewtMain.dir/src/load_pcd.cpp.i
 
 CMakeFiles/rewtMain.dir/src/load_pcd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/load_pcd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Test/src/load_pcd.cpp -o CMakeFiles/rewtMain.dir/src/load_pcd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/load_pcd.cpp -o CMakeFiles/rewtMain.dir/src/load_pcd.cpp.s
 
 CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o.requires:
 
@@ -177,13 +177,88 @@ CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o.provides: CMakeFiles/rewtMain.dir/src
 CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o.provides.build: CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o
 
 
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o: CMakeFiles/rewtMain.dir/flags.make
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o: ../src/plane_seg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/plane_seg.cpp
+
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/plane_seg.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/plane_seg.cpp > CMakeFiles/rewtMain.dir/src/plane_seg.cpp.i
+
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/plane_seg.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/plane_seg.cpp -o CMakeFiles/rewtMain.dir/src/plane_seg.cpp.s
+
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.requires:
+
+.PHONY : CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.requires
+
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.provides: CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.provides.build
+.PHONY : CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.provides
+
+CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.provides.build: CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o
+
+
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o: CMakeFiles/rewtMain.dir/flags.make
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o: ../src/cluster_extraction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/cluster_extraction.cpp
+
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/cluster_extraction.cpp > CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.i
+
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/cluster_extraction.cpp -o CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.s
+
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.requires:
+
+.PHONY : CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.requires
+
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.provides: CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.provides.build
+.PHONY : CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.provides
+
+CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.provides.build: CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o
+
+
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.o: CMakeFiles/rewtMain.dir/flags.make
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.o: ../src/passthrough.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rewtMain.dir/src/passthrough.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rewtMain.dir/src/passthrough.cpp.o -c /home/luish/Schoolz/SD/Project/vvProject/src/passthrough.cpp
+
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rewtMain.dir/src/passthrough.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luish/Schoolz/SD/Project/vvProject/src/passthrough.cpp > CMakeFiles/rewtMain.dir/src/passthrough.cpp.i
+
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rewtMain.dir/src/passthrough.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luish/Schoolz/SD/Project/vvProject/src/passthrough.cpp -o CMakeFiles/rewtMain.dir/src/passthrough.cpp.s
+
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.requires:
+
+.PHONY : CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.requires
+
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.provides: CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.provides.build
+.PHONY : CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.provides
+
+CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.provides.build: CMakeFiles/rewtMain.dir/src/passthrough.cpp.o
+
+
 # Object files for target rewtMain
 rewtMain_OBJECTS = \
 "CMakeFiles/rewtMain.dir/src/rewtMain.cpp.o" \
 "CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o" \
 "CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o" \
 "CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o" \
-"CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o"
+"CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o" \
+"CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o" \
+"CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o" \
+"CMakeFiles/rewtMain.dir/src/passthrough.cpp.o"
 
 # External object files for target rewtMain
 rewtMain_EXTERNAL_OBJECTS =
@@ -193,6 +268,9 @@ rewtMain: CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.o
 rewtMain: CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o
 rewtMain: CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o
 rewtMain: CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o
+rewtMain: CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o
+rewtMain: CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o
+rewtMain: CMakeFiles/rewtMain.dir/src/passthrough.cpp.o
 rewtMain: CMakeFiles/rewtMain.dir/build.make
 rewtMain: /usr/lib/x86_64-linux-gnu/libboost_system.so
 rewtMain: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -273,7 +351,7 @@ rewtMain: /usr/lib/libvtkFiltering.so.5.10.1
 rewtMain: /usr/lib/libvtkCommon.so.5.10.1
 rewtMain: /usr/lib/libvtksys.so.5.10.1
 rewtMain: CMakeFiles/rewtMain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luish/Schoolz/SD/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable rewtMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable rewtMain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rewtMain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -286,6 +364,9 @@ CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/CloudVisualizer.cp
 CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o.requires
 CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o.requires
 CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o.requires
+CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o.requires
+CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o.requires
+CMakeFiles/rewtMain.dir/requires: CMakeFiles/rewtMain.dir/src/passthrough.cpp.o.requires
 
 .PHONY : CMakeFiles/rewtMain.dir/requires
 
@@ -294,6 +375,6 @@ CMakeFiles/rewtMain.dir/clean:
 .PHONY : CMakeFiles/rewtMain.dir/clean
 
 CMakeFiles/rewtMain.dir/depend:
-	cd /home/luish/Schoolz/SD/Test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luish/Schoolz/SD/Test /home/luish/Schoolz/SD/Test /home/luish/Schoolz/SD/Test/build /home/luish/Schoolz/SD/Test/build /home/luish/Schoolz/SD/Test/build/CMakeFiles/rewtMain.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luish/Schoolz/SD/Project/vvProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luish/Schoolz/SD/Project/vvProject /home/luish/Schoolz/SD/Project/vvProject /home/luish/Schoolz/SD/Project/vvProject/build /home/luish/Schoolz/SD/Project/vvProject/build /home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles/rewtMain.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rewtMain.dir/depend
 

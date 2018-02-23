@@ -15,7 +15,7 @@
 #include <pcl/common/time.h>
 #include "load_pcd.h"
 
-#define NUM_COMMAND_ARGS 2
+#define NUM_COMMAND_ARGS 1
 
 using namespace std;
 
@@ -146,7 +146,7 @@ int loadPcd(int argc, char* file, pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud)
 
     // parse the command line arguments
     char* fileName = file;
-
+    std::cout << fileName << std::endl;
     // create a stop watch for measuring time
     pcl::StopWatch watch;
 

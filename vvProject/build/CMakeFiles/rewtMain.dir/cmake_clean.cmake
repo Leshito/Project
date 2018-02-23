@@ -4,6 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/rewtMain.dir/src/random_sample_consensus.cpp.o"
   "CMakeFiles/rewtMain.dir/src/voxel_grid.cpp.o"
   "CMakeFiles/rewtMain.dir/src/load_pcd.cpp.o"
+  "CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o"
+  "CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o"
+  "CMakeFiles/rewtMain.dir/src/passthrough.cpp.o"
   "rewtMain.pdb"
   "rewtMain"
 )

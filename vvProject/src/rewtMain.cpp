@@ -13,15 +13,18 @@
 #include "random_sample_consensus.h"
 #include "voxel_grid.h"
 #include "load_pcd.h"
+#include "plane_seg.h"
+#include "cluster_extraction.h"
+#include "passthrough.h"
 
 int main(int argc, char** argv)
 {
  //retrieve arguments
-char* pcdFile = argv[2];
+char* pcdFile = argv[1];
+
+std::cout << argv[1] << std::endl;
 // initialize PointClouds
 pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGBA>);
-pcl::PointCloud<pcl::PointXYZRGBA>::Ptr final (new pcl::PointCloud<pcl::PointXYZRGBA>);
-pcl::PointCloud<pcl::PointXYZRGBA>::Ptr voxCloud (new pcl::PointCloud<pcl::PointXYZRGBA>);
 
 // Fill in the cloud data
 pcl::PCDReader reader;
@@ -30,13 +33,19 @@ reader.read (pcdFile, *cloud); // Remember to download the file first!
 
 loadPcd(argc, pcdFile, cloud);
 
+passthroughfilter(cloud, cloud);
+loadPcd(argc, pcdFile, cloud);
+
 std::cerr << "PointCloud before filtering: " << cloud->width * cloud->height
-     << " data points (" << pcl::getFieldsList (*cloud) << ").";
+     << " data points (" << pcl::getFieldsList (*cloud) << ")." << std::endl;
 
-voxelfilter(cloud,voxCloud);
-loadPcd(argc, pcdFile,voxCloud);
+voxelfilter(cloud, cloud);
+loadPcd(argc, pcdFile, cloud);
 
-ransac(voxCloud, final,argv, argc);
-loadPcd(argc, pcdFile, final);
+//ransac(voxCloud, cloud,argv, argc);
+planeSeg(cloud, cloud);
+loadPcd(argc, pcdFile, cloud);
+
+clusterExtraction(cloud, cloud);
 
 }

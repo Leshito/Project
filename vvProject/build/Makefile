@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luish/Schoolz/SD/Test
+CMAKE_SOURCE_DIR = /home/luish/Schoolz/SD/Project/vvProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luish/Schoolz/SD/Test/build
+CMAKE_BINARY_DIR = /home/luish/Schoolz/SD/Project/vvProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luish/Schoolz/SD/Test/build/CMakeFiles /home/luish/Schoolz/SD/Test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles /home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luish/Schoolz/SD/Test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luish/Schoolz/SD/Project/vvProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -163,6 +163,33 @@ src/CloudVisualizer.cpp.s:
 	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/CloudVisualizer.cpp.s
 .PHONY : src/CloudVisualizer.cpp.s
 
+src/cluster_extraction.o: src/cluster_extraction.cpp.o
+
+.PHONY : src/cluster_extraction.o
+
+# target to build an object file
+src/cluster_extraction.cpp.o:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.o
+.PHONY : src/cluster_extraction.cpp.o
+
+src/cluster_extraction.i: src/cluster_extraction.cpp.i
+
+.PHONY : src/cluster_extraction.i
+
+# target to preprocess a source file
+src/cluster_extraction.cpp.i:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.i
+.PHONY : src/cluster_extraction.cpp.i
+
+src/cluster_extraction.s: src/cluster_extraction.cpp.s
+
+.PHONY : src/cluster_extraction.s
+
+# target to generate assembly for a file
+src/cluster_extraction.cpp.s:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/cluster_extraction.cpp.s
+.PHONY : src/cluster_extraction.cpp.s
+
 src/load_pcd.o: src/load_pcd.cpp.o
 
 .PHONY : src/load_pcd.o
@@ -216,6 +243,60 @@ src/openni2_snapper.s: src/openni2_snapper.cpp.s
 src/openni2_snapper.cpp.s:
 	$(MAKE) -f CMakeFiles/openni2_snapper.dir/build.make CMakeFiles/openni2_snapper.dir/src/openni2_snapper.cpp.s
 .PHONY : src/openni2_snapper.cpp.s
+
+src/passthrough.o: src/passthrough.cpp.o
+
+.PHONY : src/passthrough.o
+
+# target to build an object file
+src/passthrough.cpp.o:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/passthrough.cpp.o
+.PHONY : src/passthrough.cpp.o
+
+src/passthrough.i: src/passthrough.cpp.i
+
+.PHONY : src/passthrough.i
+
+# target to preprocess a source file
+src/passthrough.cpp.i:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/passthrough.cpp.i
+.PHONY : src/passthrough.cpp.i
+
+src/passthrough.s: src/passthrough.cpp.s
+
+.PHONY : src/passthrough.s
+
+# target to generate assembly for a file
+src/passthrough.cpp.s:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/passthrough.cpp.s
+.PHONY : src/passthrough.cpp.s
+
+src/plane_seg.o: src/plane_seg.cpp.o
+
+.PHONY : src/plane_seg.o
+
+# target to build an object file
+src/plane_seg.cpp.o:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/plane_seg.cpp.o
+.PHONY : src/plane_seg.cpp.o
+
+src/plane_seg.i: src/plane_seg.cpp.i
+
+.PHONY : src/plane_seg.i
+
+# target to preprocess a source file
+src/plane_seg.cpp.i:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/plane_seg.cpp.i
+.PHONY : src/plane_seg.cpp.i
+
+src/plane_seg.s: src/plane_seg.cpp.s
+
+.PHONY : src/plane_seg.s
+
+# target to generate assembly for a file
+src/plane_seg.cpp.s:
+	$(MAKE) -f CMakeFiles/rewtMain.dir/build.make CMakeFiles/rewtMain.dir/src/plane_seg.cpp.s
+.PHONY : src/plane_seg.cpp.s
 
 src/random_sample_consensus.o: src/random_sample_consensus.cpp.o
 
@@ -311,12 +392,21 @@ help:
 	@echo "... src/CloudVisualizer.o"
 	@echo "... src/CloudVisualizer.i"
 	@echo "... src/CloudVisualizer.s"
+	@echo "... src/cluster_extraction.o"
+	@echo "... src/cluster_extraction.i"
+	@echo "... src/cluster_extraction.s"
 	@echo "... src/load_pcd.o"
 	@echo "... src/load_pcd.i"
 	@echo "... src/load_pcd.s"
 	@echo "... src/openni2_snapper.o"
 	@echo "... src/openni2_snapper.i"
 	@echo "... src/openni2_snapper.s"
+	@echo "... src/passthrough.o"
+	@echo "... src/passthrough.i"
+	@echo "... src/passthrough.s"
+	@echo "... src/plane_seg.o"
+	@echo "... src/plane_seg.i"
+	@echo "... src/plane_seg.s"
 	@echo "... src/random_sample_consensus.o"
 	@echo "... src/random_sample_consensus.i"
 	@echo "... src/random_sample_consensus.s"

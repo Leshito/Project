@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wno-deprecated -O3 -DNDEBUG    -march=native -msse4.2 -mfpmath=ss
 
 CXX_DEFINES = -DDISABLE_DAVIDSDK -DDISABLE_DSSDK -DDISABLE_ENSENSO -DDISABLE_LIBUSB_1_0 -DDISABLE_OPENNI -DDISABLE_PCAP -DDISABLE_PNG -DDISABLE_RSSDK -Dqh_QHpointer
 
-CXX_INCLUDES = -I/usr/include/vtk-5.10 -I/usr/local/include/pcl-1.8 -I/usr/include/eigen3 -I/home/luish/OpenNI-Linux-x64-2.3/Include -I/home/luish/Schoolz/SD/Test/include 
+CXX_INCLUDES = -I/usr/include/vtk-5.10 -I/usr/local/include/pcl-1.8 -I/usr/include/eigen3 -I/home/luish/OpenNI-Linux-x64-2.3/Include -I/home/luish/Schoolz/SD/Project/vvProject/include 
 
