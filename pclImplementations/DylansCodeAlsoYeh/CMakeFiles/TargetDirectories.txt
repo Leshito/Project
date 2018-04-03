@@ -1,0 +1,3 @@
+/home/luish/Schoolz/SD/Project/pclImplementations/DylansCodeAlsoYeh/CMakeFiles/rebuild_cache.dir
+/home/luish/Schoolz/SD/Project/pclImplementations/DylansCodeAlsoYeh/CMakeFiles/edit_cache.dir
+/home/luish/Schoolz/SD/Project/pclImplementations/DylansCodeAlsoYeh/CMakeFiles/mydickhurts.dir
