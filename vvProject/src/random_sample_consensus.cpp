@@ -9,6 +9,7 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include <boost/thread/thread.hpp>
 #include "random_sample_consensus.h"
+#include "shape_detection.h"
 
 boost::shared_ptr<pcl::visualization::PCLVisualizer>
 simpleVis (pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr cloud)
@@ -25,7 +26,7 @@ simpleVis (pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr cloud)
   return (viewer);
 }
 
-int ransac(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<pcl::PointXYZRGBA>::Ptr final, char ** argv, int argc)
+int ransac(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<pcl::PointXYZRGBA>::Ptr finalCloud, char ** argv, int argc)
 {
   //retrieve arguments
   char* pcdFile=argv[2];
@@ -53,7 +54,9 @@ int ransac(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<pcl::Po
   }
 
   // copies all inliers of the model computed to another PointCloud
-  pcl::copyPointCloud<pcl::PointXYZRGBA>(*cloud, inliers, *final);
+  pcl::copyPointCloud<pcl::PointXYZRGBA>(*cloud, inliers, *finalCloud);
+  //Detect shape of object in scene
+  shapeDetect(finalCloud);
 
   // creates the visualization object and adds either our orignial cloud or all of the inliers
   // depending on the command line arguments specified.
@@ -68,12 +71,15 @@ int ransac(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<pcl::Po
     boost::this_thread::sleep (boost::posix_time::microseconds (100000));
   }*/
 
-
-    pcl::PCDWriter writer;
+    //pcl::PCDWriter writer;
     //writer.write ("/home/luish/Schoolz/SD/voxelTest/table_scene_lms400_downsampled.pcd", *cloudFiltered,
     //      false);
-    writer.write ("/home/luish/Schoolz/SD/vanRan/voxel_ran_combo/finalCloud.pcd", *final,
+
+    
+    /*
+    writer.write ("/home/dylan/PCL_TEST_GROUP/3/Project/vvProject/finalCloud.pcd", *finalCloud,
           false);
+    */
 
 
 

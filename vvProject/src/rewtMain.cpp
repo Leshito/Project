@@ -16,6 +16,7 @@
 #include "plane_seg.h"
 #include "cluster_extraction.h"
 #include "passthrough.h"
+#include "shape_detection.h"
 
 int main(int argc, char** argv)
 {
@@ -42,7 +43,7 @@ std::cerr << "PointCloud before filtering: " << cloud->width * cloud->height
 voxelfilter(cloud, cloud);
 loadPcd(argc, pcdFile, cloud);
 
-//ransac(voxCloud, cloud,argv, argc);
+ransac(cloud, cloud,argv, argc);
 planeSeg(cloud, cloud);
 loadPcd(argc, pcdFile, cloud);
 
