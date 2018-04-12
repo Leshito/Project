@@ -17,12 +17,12 @@ void shapeDetect(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud)
 	pcl::NormalEstimation<PointT, pcl::Normal> ne;
 	pcl::SACSegmentationFromNormals<PointT, pcl::Normal> seg;
 	pcl::search::KdTree<PointT>::Ptr tree (new pcl::search::KdTree<PointT>());
-	
+
 	//-Datasets
 	pcl::PointCloud<pcl::Normal>::Ptr cloud_normals (new pcl::PointCloud<pcl::Normal>);
 	pcl::ModelCoefficients::Ptr coefficients_cylinder (new pcl::ModelCoefficients);
 	pcl::PointIndices::Ptr inliers_cylinder (new pcl::PointIndices);
-	
+
 	//-Estimate point normals
 	ne.setSearchMethod(tree);
 	ne.setInputCloud(cloud);
@@ -38,7 +38,7 @@ void shapeDetect(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud)
 	seg.setInputCloud(cloud);
 	seg.setInputNormals(cloud_normals);
 	seg.setModelType(pcl::SACMODEL_CYLINDER);
-	
+
 	//-Check if cylinder exists
 	seg.segment(*inliers_cylinder, *coefficients_cylinder);
 	if (inliers_cylinder->indices.size() != 0){
@@ -49,7 +49,7 @@ void shapeDetect(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud)
 	//Sphere
 	//-Set segmentation parameters
 	seg.setModelType(pcl::SACMODEL_NORMAL_SPHERE);
-	
+
 	//-Check if sphere exists
 	pcl::PointIndices::Ptr shapeIndices(new pcl::PointIndices);
 	seg.segment(*shapeIndices, *coefficients_cylinder);

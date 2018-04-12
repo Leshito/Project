@@ -229,12 +229,12 @@ findModel (int argc, char *argv[], pcl::PointCloud<pcl::PointXYZRGBA>::Ptr model
   uniform_sampling.setInputCloud (model);
   uniform_sampling.setRadiusSearch (model_ss_);
   uniform_sampling.filter (*model_keypoints);
-  std::cout << "Model total points: " << model->size () << "; Selected Keypoints: " << model_keypoints->size () << std::endl;
+  //std::cout << "Model total points: " << model->size () << "; Selected Keypoints: " << model_keypoints->size () << std::endl;
 
   uniform_sampling.setInputCloud (scene);
   uniform_sampling.setRadiusSearch (scene_ss_);
   uniform_sampling.filter (*scene_keypoints);
-  std::cout << "Scene total points: " << scene->size () << "; Selected Keypoints: " << scene_keypoints->size () << std::endl;
+  //std::cout << "Scene total points: " << scene->size () << "; Selected Keypoints: " << scene_keypoints->size () << std::endl;
 
 
   //
@@ -277,7 +277,7 @@ findModel (int argc, char *argv[], pcl::PointCloud<pcl::PointXYZRGBA>::Ptr model
       model_scene_corrs->push_back (corr);
     }
   }
-  std::cout << "Correspondences found: " << model_scene_corrs->size () << std::endl;
+  //std::cout << "Correspondences found: " << model_scene_corrs->size () << std::endl;
 
   //
   //  Actual Clustering
@@ -343,7 +343,7 @@ findModel (int argc, char *argv[], pcl::PointCloud<pcl::PointXYZRGBA>::Ptr model
   //
   //We only care about if it found a model and since there will only be one object in the scene the if it says its similar then
   //we can infer that it was what we were looking for
-  std::cout << "Model instances found: " << rototranslations.size () << std::endl;
+  //std::cout << "Model instances found: " << rototranslations.size () << std::endl;
   if(rototranslations.size() > 0)
     return 1;
   else

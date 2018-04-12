@@ -6,11 +6,11 @@
 #include <pcl/surface/convex_hull.h>
 #include <pcl/segmentation/extract_polygonal_prism_data.h>
 #include <pcl/visualization/cloud_viewer.h>
-#include "plane_seg.h"
 
 #include <iostream>
 
-int planeSeg(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud, pcl::PointCloud<pcl::PointXYZRGBA>::Ptr objects)
+
+int planeSeg(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud, pcl::PointCloud<pcl::PointXYZRGBA>::Ptr objects, float planeCoe[])
 {
 	//char* filename = argv[1];
 
@@ -41,6 +41,13 @@ int planeSeg(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud, pcl::PointCloud<pcl:
 	pcl::PointIndices::Ptr planeIndices(new pcl::PointIndices);
 	segmentation.segment(*planeIndices, *coefficients);
 
+	//Possibly divide by d for some reason
+	//printf("a: %f, b: %f, c: %f\n", coefficients->values[0], coefficients->values[1], coefficients->values[2]);
+	planeCoe[0] = coefficients->values[0];
+	planeCoe[1] = coefficients->values[1];
+	planeCoe[2] = coefficients->values[2];
+	planeCoe[3] = coefficients->values[3];
+
 	if (planeIndices->indices.size() == 0)
 		std::cout << "Could not find a plane in the scene." << std::endl;
 	else
@@ -49,8 +56,9 @@ int planeSeg(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud, pcl::PointCloud<pcl:
 		pcl::ExtractIndices<pcl::PointXYZRGBA> extract;
 		extract.setInputCloud(cloud);
 		extract.setIndices(planeIndices);
+		//extract.setNegative(true);
 		extract.filter(*plane);
-
+		
 		// Retrieve the convex hull.
 		pcl::ConvexHull<pcl::PointXYZRGBA> hull;
 		hull.setInputCloud(plane);
@@ -84,7 +92,7 @@ int planeSeg(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud, pcl::PointCloud<pcl:
 		}
 		else std::cout << "The chosen hull is not planar." << std::endl;
 	}
-
+	
 	//pcl::PCDWriter writer;
 	//writer.write ("/home/luish/Schoolz/SD/Project/pcdFiles/objectsOnTable.pcd", *objects, 
     // false);

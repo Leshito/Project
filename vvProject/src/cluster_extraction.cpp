@@ -12,8 +12,9 @@
 #include "cluster_extraction.h"
 
 
-int 
-clusterExtraction(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloudFiltered)
+int
+clusterExtraction(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,
+                  std::vector < pcl::PointCloud<pcl::PointXYZRGBA>::Ptr, Eigen::aligned_allocator <pcl::PointCloud <pcl::PointXYZRGBA>::Ptr > > *clusters)
 {
 
   //char* filename = argv[1];
@@ -22,7 +23,7 @@ clusterExtraction(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<
   //pcl::PCDReader reader;
   //pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGBA>), cloud_f (new pcl::PointCloud<pcl::PointXYZRGBA>);
   //reader.read (filename, *cloud);
-  std::cout << "PointCloud before filtering has: " << cloud->points.size () << " data points." << std::endl; //*
+  //std::cout << "PointCloud before filtering has: " << cloud->points.size () << " data points." << std::endl; //*
 
  /* // Create the filtering object: downsample the dataset using a leaf size of 1cm
   pcl::VoxelGrid<pcl::PointXYZRGBA> vg;
@@ -85,11 +86,14 @@ clusterExtraction(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<
   ec.setClusterTolerance (0.02); // 2cm
   //ec.setMinClusterSize (100);
   //ec.setMaxClusterSize (25000);
-  ec.setMinClusterSize (100);
-  ec.setMaxClusterSize (3000);
+  ec.setMinClusterSize (580);
+  ec.setMaxClusterSize (8000);
   ec.setSearchMethod (tree);
   ec.setInputCloud (cloud);
   ec.extract (cluster_indices);
+
+  int numOfClusters = cluster_indices.size();
+  //printf("Num of clusters: %d\n", numOfClusters );
 
   int j = 0;
   for (std::vector<pcl::PointIndices>::const_iterator it = cluster_indices.begin (); it != cluster_indices.end (); ++it)
@@ -101,12 +105,14 @@ clusterExtraction(pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud,pcl::PointCloud<
     cloud_cluster->height = 1;
     cloud_cluster->is_dense = true;
 
-    std::cout << "PointCloud representing the Cluster: " << cloud_cluster->points.size () << " data points." << std::endl;
+    //std::cout << "PointCloud representing the Cluster: " << cloud_cluster->points.size () << " data points." << std::endl;
     std::stringstream ss;
     ss << "cloud_cluster_" << j << ".pcd";
     writer.write<pcl::PointXYZRGBA> (ss.str (), *cloud_cluster, false); //*
+    clusters->push_back(cloud_cluster);
     j++;
   }
-
+   int c = clusters->size();
+   //printf("size of clusters: %d\n", c);
   return (0);
 }
